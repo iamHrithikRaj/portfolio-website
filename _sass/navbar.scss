@@ -1,10 +1,12 @@
 .nav-bar {
     width: 100%;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     background-color: #1C539F;
     font-family: "Poppins", serif;
     font-weight: 700 !important;
-    padding-top: 10px;
+    padding: 20px;
+    align-items: center;
 }
 
 .nav-content .logo-touch-target {
@@ -34,4 +36,20 @@
     text-align: right;
     padding-top: 0px;
     padding-right: 0px;
+}
+
+.nav-links-container, .nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    color: #fff;
+    list-style: none;
+    transition: 0.2s ease;
+}
+
+.nav-link:hover{
+    color: #FFD700;
 }
