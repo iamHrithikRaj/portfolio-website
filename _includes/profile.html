@@ -1,9 +1,20 @@
 <div class="profile">
-    <div class="profile-picture">
-        <img src="./assets/img/logo.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 align-self-center">
+                <h1>{{ site.title }}</h1>
+                <p>
+                    Reprehenderit ad consectetur magna est reprehenderit irure irure duis.Fugiat non labore minim aliquip. Do reprehenderit occaecat adipisicing in mollit ipsum adipisicing. Dolor consequat Lorem do veniam culpa dolore eiusmod elit pariatur. Occaecat culpa sit aliquip minim commodo dolore deserunt consequat laborum exercitation.
+                </p>
+                <button type="button" class="btn btn-warning">
+                    <a href="../assets/resume/Resume.pdf" download="Resume">Download Resume</a>
+                </button>
+            </div>
+
+            <div class="col-md-2"></div>
+            <div class="col-md-4 profile-picture">
+                <img src="./assets/img/logo.jpg" alt="" class="img-fluid rounded-circle d-none d-md-block about-img">
+            </div>
+        </div>
     </div>
-    <h1>{{ site.title }}</h1>
-    <button type="button" class="btn btn-warning">
-        <a href="../assets/resume/Resume.pdf" download="Resume">Download Resume</a>
-    </button>
 </div>
