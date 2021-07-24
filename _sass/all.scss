@@ -56,6 +56,20 @@ h2 {
   font-size: 1.2em;
 }
 
+.card:hover {
+  background-color: #1C539F;
+  color: #fff;
+}
+
+.card:hover .info .dates {
+  color: #fff;
+}
+
+.card-container:hover a {
+  text-decoration: none;
+  color: inherit;
+}
+
 a {
   color: black;
 }
