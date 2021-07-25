@@ -1,0 +1,9 @@
+{% for project in site.projects %}
+<div id="{{ project.modal-name }}" class="modal-window">
+  <div>
+    <a href="#close" title="Close" class="modal-close">Close</a>
+    <h1>{{ project.title }}</h1>
+    <p>{{ project.content }}</p>
+  </div>
+</div>
+{% endfor %}

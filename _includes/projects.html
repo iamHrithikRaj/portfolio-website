@@ -1,11 +1,7 @@
 <h2 class="section-heading" >Projects</h2>
 <div class="card-container">
     {% for item in site.data.projects %}
-    {% if item.page-name %}
-    <a href="/projects/{{ item.page-name }}">
-    {% else %}
-    <a>
-    {% endif %}
+    <a href="#{{ item.modal-name }}">
       <div class="card">
         <div class="info">
           <p class="title">{{ item.title }}</p>
