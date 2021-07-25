@@ -37,6 +37,17 @@
           for (sectionHeading of sectionHeadings) {
             sectionHeading.classList.toggle("dark-mode-section-heading");
           }
+
+          const cards = document.getElementsByClassName("card");
+          for (card of cards) {
+            card.classList.toggle("dark-mode-card");
+          }
+
+          const banner = document.querySelector(".profile");
+          banner.classList.toggle("dark-mode-banner");
+
+          const navbar = document.querySelector(".nav-bar");
+          navbar.classList.toggle("dark-mode-banner");
         });
       </script>
     </div>
