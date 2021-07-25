@@ -1,3 +1,7 @@
+@media only screen and (max-width: 960px) {
+  .main-navigation-big {display: none;}
+}
+
 .nav-bar {
   width: 100%;
   display: flex;
@@ -5,7 +9,7 @@
   background-color: #1c539f;
   font-family: "Poppins", serif;
   font-weight: 700 !important;
-  padding: 20px;
+  padding: 10px;
   align-items: center;
 }
 
@@ -45,6 +49,7 @@
 :root {
   --color-primary: #0047ab;
   --color-secondary: #f0f7ee;
+  --background: #1c539f;
   --duration: 1s;
   --nav-duration: calc(var(--duration) / 4);
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -53,6 +58,10 @@
   --font-heading: "Merriweather", serif;
   --font-size: 1.125rem;
   --line-height: 1.5;
+}
+
+@media only screen and (min-width: 960px) {
+  div#collapsed-bar {display: none;}
 }
 
 * {
