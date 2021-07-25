@@ -38,6 +38,10 @@ body {
 
 .dark-mode {
   background-color: #002b36;
+  // color: white;
+}
+
+.dark-mode-section-heading {
   color: white;
 }
 
@@ -57,6 +61,20 @@ h2 {
   border-radius: 0.375rem;
   padding: 1.5em;
   font-size: 1.2em;
+}
+
+.card:hover {
+  background-color: #1C539F;
+  color: #fff;
+}
+
+.card:hover .info .dates {
+  color: #fff;
+}
+
+.card-container:hover a {
+  text-decoration: none;
+  color: inherit;
 }
 
 a {

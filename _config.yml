@@ -11,3 +11,8 @@ sass:
   sass_dir: _sass
 
 icon: /assets/img/icon.jpg
+
+collections:
+  - projects
+
+exclude: [vendor]
