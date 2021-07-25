@@ -33,6 +33,8 @@ body {
   margin-bottom: 50px;
 }
 
+// dark mode theme
+
 .dark-mode {
   background-color: #002b36;
   // color: white;
@@ -41,6 +43,20 @@ body {
 .dark-mode-section-heading {
   color: white;
 }
+
+.dark-mode-card{
+  background-color: #eee8d5 !important;
+}
+
+.dark-mode-banner{
+  background-color: #586e75 !important;
+}
+
+.dark-mode-navbar{
+  background-color: #586e75 !important;
+}
+
+
 
 h2 {
   margin-bottom: 20px;
