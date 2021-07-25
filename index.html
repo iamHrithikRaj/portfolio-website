@@ -31,6 +31,12 @@
         toggle.addEventListener("click", () => {
           const element = document.body;
           element.classList.toggle("dark-mode");
+
+          const sectionHeadings =
+            document.getElementsByClassName("section-heading");
+          for (sectionHeading of sectionHeadings) {
+            sectionHeading.classList.toggle("dark-mode-section-heading");
+          }
         });
       </script>
     </div>
