@@ -21,5 +21,9 @@ toggle.addEventListener("click", () => {
 
   const footer = document.querySelector(".footer");
   footer.classList.toggle("dark-mode-footer");
-});
 
+  const timelineCards = document.getElementsByClassName("timeline-card");
+  for (timelineCard of timelineCards) {
+    timelineCard.classList.toggle("dark-mode-card");
+  }
+});
