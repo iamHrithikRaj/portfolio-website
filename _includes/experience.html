@@ -4,13 +4,13 @@
   <ul>
     {% for item in site.data.experience %}
     <li>
-      <div class="timeline-card">
+      <div class="timeline-card info">
         <img class="icon" src="./assets/img/experience/{{ item.logo }}" />
-        <h4 class="title">{{ item.role }}<h4/>
-        <p class="location">
-          {{ item.company }} <br />
-          {{ item.dates }}
-        </p>
+        
+        <h4 class="title">{{ item.role }}</h4>
+        <p class="location">{{ item.company }} </p>
+        <p class="dates">{{ item.dates }} </p>
+        <br>
         <p>{{ item.desc }}</p>
       </div>
     </li>
