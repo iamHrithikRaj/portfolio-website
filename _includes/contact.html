@@ -1,0 +1,32 @@
+<h2 id="contact" class="section-heading">Contact</h2>
+<div class="container">
+  <form
+    id="contactform"
+    action="https://formspree.io/f/YOUR_FORM_ID"
+    method="POST"
+    onsubmit="showToast()"
+  >
+    <div class="form-group">
+      <input type="text" placeholder="Your name" name="name" required />
+      <input type="email" placeholder="Your email" name="_replyto" required />
+    </div>
+    <div class="form-group">
+      <textarea name="message" placeholder="Your message" required></textarea>
+    </div>
+    <div class="button-group">
+      <button type="submit" class="btn btn-warning">Submit</button>
+    </div>
+  </form>
+</div>
+
+<script>
+  const notyf = new Notyf({ position: { x: "right", y: "top" } });
+  const contactForm = document.getElementById("contactform");
+
+  const showToast = () => {
+    notyf.success("Message sent successfully!");
+    contactform.reset();
+  };
+
+  contactForm.addEventListener("submit", (e) => e.preventDefault());
+</script>
