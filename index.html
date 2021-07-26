@@ -3,11 +3,12 @@
 
 <!DOCTYPE html>
 <html lang="en">
-{% include header.html %}
+  {% include header.html %}
 
   <body>
     {% include navbar.html %} {% include profile.html %} {% include
-    projects.html %} {% include experience.html %} {% include education.html %} {% include footer.html %}
+    projects.html %} {% include experience.html %} {% include education.html %}
+
     <div class="switch">
       <input type="checkbox" id="switch-input" name="toggle" />
       <label for="toggle">
@@ -26,31 +27,8 @@
           </span>
         </i>
       </label>
-      <script>
-        const toggle = document.querySelector("#switch-input");
-        toggle.addEventListener("click", () => {
-          const element = document.body;
-          element.classList.toggle("dark-mode");
-
-          const sectionHeadings =
-            document.getElementsByClassName("section-heading");
-          for (sectionHeading of sectionHeadings) {
-            sectionHeading.classList.toggle("dark-mode-section-heading");
-          }
-
-          const cards = document.getElementsByClassName("card");
-          for (card of cards) {
-            card.classList.toggle("dark-mode-card");
-          }
-
-          const banner = document.querySelector(".profile");
-          banner.classList.toggle("dark-mode-banner");
-
-          const navbar = document.querySelector(".nav-bar");
-          navbar.classList.toggle("dark-mode-banner");
-        });
-      </script>
+      <script src="./scripts/main.js"></script>
     </div>
-    {% include project-details.html %}
+    {% include footer.html %} {% include project-details.html %}
   </body>
 </html>
