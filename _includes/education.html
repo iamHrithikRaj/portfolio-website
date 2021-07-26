@@ -1,16 +1,18 @@
 <h2 id="education" class="section-heading">Education</h2>
-<div class="container card-container-education">
-    {% for item in site.data.education %}
-    <div class="card">
-      <div class="icon">
-        <img src="./assets/img/education/{{ item.logo }}">
+<div class="animated animatedFadeInUp fadeInUp">
+  <div class="container card-container card-container-education">
+      {% for item in site.data.education %}
+      <div class="card">
+        <div class="icon">
+          <img src="./assets/img/education/{{ item.logo }}">
+        </div>
+        <div class="info">
+          <p class="title">{{ item.course }}</p>
+          <p class="location">{{ item.institute }}</p>
+          <p class="dates">{{ item.dates }}</p>
+        </div>
       </div>
-      <div class="info">
-        <p class="title">{{ item.course }}</p>
-        <p class="location">{{ item.institute }}</p>
-        <p class="dates">{{ item.dates }}</p>
-      </div>
-    </div>
-    {% endfor %}
+      {% endfor %}
+  </div>
 </div>
   
