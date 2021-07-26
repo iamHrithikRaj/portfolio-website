@@ -1,23 +1,18 @@
 .profile {
-  padding: 8%;
+  padding: 15%;
   background-color: #1d539f !important;
-  height: 540px;
+  height: 500px;
   margin-bottom: 50px;
   padding-top: 7rem;
   color: white;
   text-align: left;
 
   h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     color: white;
     margin-bottom: 25px;
     text-align: left;
-  }
-
-  .site-title {
-    font-size: 100px;
-    font-family: "Dancing Script", cursive !important;
   }
 
   p {
@@ -39,6 +34,6 @@
 
   .profile-picture {
     margin-bottom: 30px;
-    height: 350px;
+    height: 320px;
   }
 }
