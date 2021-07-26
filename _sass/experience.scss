@@ -52,8 +52,8 @@ h1 {
   border-radius: 5px;
   position: relative;
   bottom: 0;
-  width: 400px;
-  padding: 1rem;
+  width: 510px;
+  padding: 1.5rem;
   background: var(--secondary-color);
   transition: all 0.5s ease-in-out;
   visibility: hidden;
@@ -73,7 +73,7 @@ h1 {
 
 /* Left Side */
 #timeline ul li:nth-child(even) div {
-  left: -434px;
+  left: -555px;
   transform: translate(-200px, 0);
 }
 
