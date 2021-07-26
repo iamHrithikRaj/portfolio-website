@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 @import "navbar";
 @import "profile";
 @import "page";
@@ -9,7 +10,17 @@
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: "Open Sans", sans-serif;
+}
+
+.card-container-education {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 2fr);
   font-family: "Open Sans", sans-serif;
 }
 
@@ -75,6 +86,7 @@ h2 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 400px;
   margin: 20px 30px;
   background-color: white;
   border-radius: 0.375rem;
@@ -87,10 +99,13 @@ h2 {
   box-shadow: 0px 0px 10px 2px #ddd;
 }
 
-
 .card-container:hover a {
   text-decoration: none;
   color: inherit;
+}
+
+.section-heading {
+  font-size: 40px;
 }
 
 a {
