@@ -4,6 +4,11 @@
     <a href="#{{ item.modal-name }}">
       <div class="card">
         <div class="info">
+
+          <div class="project-img">
+            <img src="./assets/img/education/{{ item.logo }}">
+          </div>
+
           <p class="title">{{ item.title }}</p>
           <p class="location">{{ item.event }}</p>
           <p class="dates">{{ item.date }}</p>
@@ -12,4 +17,3 @@
     </a>
     {% endfor %}
   </div>
-  

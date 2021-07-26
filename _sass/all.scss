@@ -5,6 +5,7 @@
 @import "page";
 @import "footer";
 @import "experience";
+@import "project";
 
 .card-container {
   display: grid;
@@ -73,6 +74,7 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   margin: 20px 30px;
   background-color: white;
   border-radius: 0.375rem;
@@ -119,10 +121,12 @@ a {
 }
 
 .icon {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   margin-right: 20px;
   padding: 10px;
+  padding-left: 0;
+  padding-top: 0;
 
   img {
     width: 100%;
