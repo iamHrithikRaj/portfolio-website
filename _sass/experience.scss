@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 :root {
   --primary-color: coral;
-  --secondary-color: #fffdd0;
+  --secondary-color: #fff;
   --background-color: #1d539f;
   --line-color: #efb62d;
   --max-width: 1100px;
@@ -61,7 +61,8 @@ h1 {
 }
 
 #timeline ul li div:hover {
-  box-shadow: 1px 1px 15px 6px rgba(0, 0, 0, 0.3);
+  transform: perspective(600px) translateZ(20px);
+  box-shadow: 0px 0px 10px 2px #ddd;
 }
 
 /* Right Side */

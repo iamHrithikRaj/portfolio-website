@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
-@import 'navbar';
-@import 'profile';
-@import 'page';
-@import 'footer';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import "navbar";
+@import "profile";
+@import "page";
+@import "footer";
 @import "experience";
-
 
 .card-container {
   display: grid;
@@ -47,19 +46,17 @@ body {
   color: white;
 }
 
-.dark-mode-card{
+.dark-mode-card {
   background-color: #eee8d5 !important;
 }
 
-.dark-mode-banner{
+.dark-mode-banner {
   background-color: #586e75 !important;
 }
 
-.dark-mode-navbar{
+.dark-mode-navbar {
   background-color: #586e75 !important;
 }
-
-
 
 h2 {
   margin-bottom: 20px;
@@ -77,16 +74,14 @@ h2 {
   border-radius: 0.375rem;
   padding: 1.5em;
   font-size: 1.2em;
+  transition: all 0.5s;
 }
 
 .card:hover {
-  background-color: #1C539F;
-  color: #fff;
+  transform: perspective(600px) translateZ(20px);
+  box-shadow: 0px 0px 10px 2px #ddd;
 }
 
-.card:hover .info .dates {
-  color: #fff;
-}
 
 .card-container:hover a {
   text-decoration: none;
@@ -132,7 +127,6 @@ a {
 }
 
 //bulb (dark mode toggle)
-
 
 .switch {
   position: fixed;
@@ -358,8 +352,7 @@ a {
 }
 .switch input:checked ~ label .bulb > .bulb-center {
   background-color: #feed6b;
-  box-shadow: inset 0 0 0 2px #fdec6a, 0 0 8px 7px #bca83c,
-    0 0 10px 7px #a1664a;
+  box-shadow: inset 0 0 0 2px #fdec6a, 0 0 8px 7px #bca83c, 0 0 10px 7px #a1664a;
 }
 .switch input:checked ~ label .bulb > .bulb-center:after {
   background-color: #fef401;
