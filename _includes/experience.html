@@ -1,44 +1,45 @@
-<h2>Work Experience</h2>
-  
-  <section id="timeline">
-    <ul>
-      {% for item in site.data.experience %}
-      <li>
-        <div>
-          <img class="icon" src="./assets/img/experience/{{ item.logo }}">
-          <h3> {{ item.role }} </h3>
-          <p class="location">{{ item.company }} <br> {{ item.dates }}</p>
-          <p>
-            {{ item.desc }}
-          </p>
-        </div>
-      </li>
+<h2 class="section-heading">Work Experience</h2>
 
-      {% endfor %}
-    </ul>
-  </section>
+<section id="timeline">
+  <ul>
+    {% for item in site.data.experience %}
+    <li>
+      <div>
+        <img class="icon" src="./assets/img/experience/{{ item.logo }}" />
+        <h3>{{ item.role }}</h3>
+        <p class="location">
+          {{ item.company }} <br />
+          {{ item.dates }}
+        </p>
+        <p>{{ item.desc }}</p>
+      </div>
+    </li>
 
-  <script>
-    const items = document.querySelectorAll('#timeline li');
-    const isInViewport = el => {
-      const rect = el.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-    };
-    const run = () =>
-      items.forEach(item => {
-        if (isInViewport(item)) {
-          item.classList.add('show');
-        }
-      });
+    {% endfor %}
+  </ul>
+</section>
 
-    // Events
-    window.addEventListener('load', run);
-    window.addEventListener('resize', run);
-    window.addEventListener('scroll', run);
-  </script>
+<script>
+  const items = document.querySelectorAll("#timeline li");
+  const isInViewport = (el) => {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
+  const run = () =>
+    items.forEach((item) => {
+      if (isInViewport(item)) {
+        item.classList.add("show");
+      }
+    });
+
+  // Events
+  window.addEventListener("load", run);
+  window.addEventListener("resize", run);
+  window.addEventListener("scroll", run);
+</script>
